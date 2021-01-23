@@ -14,4 +14,10 @@ Notes:
 """
 def mapping(letters):
     # Your code here
+    d = {}
+    for elem in letters:
+        upper_letter = elem.upper()
+        d[elem] = upper_letter
+    return d
 
+print(mapping(["p", "s", "t"]))
